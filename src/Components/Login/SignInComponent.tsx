@@ -24,7 +24,7 @@ const SignInComponent = () => {
           />
           <button
             className={`absolute text-sm  right-1.5 bottom-1.5 cursor-pointer rounded p-1 min-w-10 ${
-              showPassword ? "bg-gray-300" : "bg-amber-500"
+              showPassword ? "bg-gray-300 hover:bg-gray-200" : "bg-amber-500 hover:bg-amber-400"
             }`}
             onClick={() => setShowPassword(!showPassword)}
           >
@@ -33,7 +33,7 @@ const SignInComponent = () => {
         </div>
       </div>
       <div className="absolute bottom-0 flex justify-center w-full mb-10">
-        <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 cursor-pointer">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded mt-4 cursor-pointer shadow-lg hover:bg-blue-600 transition-colors">
           Sign In
         </button>
       </div>
